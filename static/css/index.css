@@ -174,7 +174,7 @@ body {
     /* 半透明覆盖 */
     linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
     /* 背景图片 */
-    url('../images/background1.jpg');
+    url('../images/background2.jpg');
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -187,7 +187,7 @@ body {
   background: 
     linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
     linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
-    url('../images/background1.jpg');
+    url('../images/background2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% center;
@@ -197,7 +197,7 @@ body {
   background: 
     linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
     linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
-    url('../images/background1.jpg');
+    url('../images/background2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% center;
@@ -207,7 +207,7 @@ body {
   background: 
     linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
     linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
-    url('../images/background1.jpg');
+    url('../images/background2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% center;
@@ -217,7 +217,7 @@ body {
   background: 
     linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%),
     linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
-    url('../images/background1.jpg');
+    url('../images/background2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 1% center;

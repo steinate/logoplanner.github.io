@@ -287,7 +287,7 @@
     <div class="columns is-centered">
       <div class="column is-four-fifths">
 
-        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">LoGoPlanner&nbsp;</span>Fully End-to-end Planner</h2>
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">LoGoPlanner&nbsp;</span>Fully E2E Planner</h2>
         <div class="content">
           <p>
 
@@ -304,11 +304,9 @@
     <div class="container">
       <div class="columns is-centered has-text-centered">
         <div class="content has-text-centered" style="max-width: 90%;">
-          <img src="static/images/method.png">
+          <img src="static/images/graph.svg">
           <p class="has-text-grey">
-          <span class="gradient-text">LoGoPlanner</span>
-          pipeline spans the entire process of a <strong>long-horizon</strong> task, including multi-modal semantic perception, 
-          <strong>map-aware</strong> global planning, <strong>geometry-constrained</strong> action grounding, and step-wise execution by a reinforced learned low-level <strong>whole-body policy</strong>.
+          <span class="gradient-text">LoGoPlanner</span> injects scale priors into the image patches that are encoded by ViT, and finetunes the video geometry model to metric scale prediction. We adopt a query-based design in which ego state representation and environment geometry are implicitly aggregated through task-specific queries. A diffusion policy head is detached to generate feasible and collision-free trajectories.
           </p>
         </div>
       </div>
@@ -324,11 +322,7 @@
         <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">LoGoPlanner&nbsp;</span>Benchmark</h2>
         <div class="content">
           <p>
-          <span class="gradient-text">LoGoPlanner</span> Benchmark is the first simulation platform designed for long-horizon mobile manipulation which highlights the following major points: 
-          (1) The benchmark includes <strong>8 multi-stage tasks</strong> designed to evaluate the full pipeline of embodied mobile manipulation, covering perception, planning, navigation, and manipulation. 
-          (2) Each task consists of 2-3 subgoals with diverse object types, spatial layouts, and physical interaction modes to reflect realistic and complex scenarios. 
-          (3) LoGoPlanner spans both indoor and outdoor environments, featuring over 300 task variations and numerous unique assets to ensure robust generalization. 
-          (4) Detailed task configurations enable comprehensive benchmarking of system performance across a wide range of practical challenges.
+          <span class="gradient-text">InternScenes</span> Benchmark includes 20 home and 20 commercial scenes. Home scenes are characterized by narrow passages and cluttered semantic layouts, while commercial scenes cover representative categories such as hospitals, supermarkets, restaurants, schools, libraries, and offices. In each scene, 100 start-goal pairs are randomly sampled in unoccupied spaces with distances of 4-10 meters, and initial orientations are determined through path planning to avoid collisions.
           </p>
         </div>
       </div>
