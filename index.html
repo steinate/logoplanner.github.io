@@ -1,310 +1,424 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
 
-  <!-- Twitter -->
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
-
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+  <title>LoGoPlanner: Localization Grounded Navigation Policy with Metric-aware Visual Geometry</title>
+  <link rel="icon" type="image/png" href="static/images/icon_small.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
 <body>
-
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
+  <section class="hero is-fullheight">
+    <div class="hero-body blur">
+      <div class="container is-fullhd">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+  
+            <!-- Start: Wrapper for semi-transparent background -->
+            <div class="content-box">
+              <div class="title-animation-container">
+                <h1 id="main-title" class="title is-1 publication-title is-size-1-mobile" style="font-size: 8rem;">
+                  <img src="static/images/icon_full.jpg" alt="LoGoPlanner icon" style="height: 1.5em;">
+                  <span class="gradient-text"><span id="typing-text"></span></span>
+                </h1>
+                <h1 id="subtitle" class="title is-1 publication-title is-size-1-mobile" style="font-size: 4rem;">
+                  Localization Grounded Navigation Policy with <br>
+                  Metric-aware Visual Geometry
+                </h1>
+              </div>
+    
+              <div class="is-size-4 publication-authors">
+                <span class="author-block">
+                  <a href="https://steinate.github.io/">Jiaqi Peng</a><sup>1,2*</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://wzcai99.github.io/">Wenzhe Cai</a><sup>2*</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://yuqiang-yang.github.io/">Yuqiang Yang</a><sup>2*</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://tai-wang.github.io/">Tai Wang</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://oceanpang.github.io/">Jiangmiao Pang</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://oa.ee.tsinghua.edu.cn/~shenyuan/">Yuan Shen</a><sup>1,2</sup>,
+                </span>
+              </div>
+    
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>Tsinghua University.</span><br>
+                <span class="author-block"><sup>2</sup>Shanghai AI Laboratory</span><br>
+                <span class="author-block"><sup>*</sup>equal contribution</span>
+              </div>
+    
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <!-- ... (links are unchanged) ... -->
+                  <!-- Arxiv Link. -->
+                  <span class="link-block">
+                    <a target="_blank" href="https://arxiv.org/abs/" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>ArXiv</span>
+                    </a>
+                  </span>
+      
+                  <!-- Video Link. -->
+                  <span class="link-block">
+                    <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>Video</span>
+                    </a>
+                  </span>
+      
+                  <!-- Code Link. -->
+                  <span class="link-block">
+                    <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code(Coming soon)</span>
+                      </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- End: Wrapper for semi-transparent background -->
+  
+          </div>
+        </div>
       </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
+    </div>
+  </section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Trajectory planning in unstructured environments is a fundamental and challenging capability for mobile robots. Traditional modular pipelines suffer from <strong>latency and cascading errors</strong> across perception, localization, mapping, and planning modules. Recent end-to-end learning methods map raw visual observations directly to control signals or trajectories, promising greater performance and efficiency in open-world settings. However, most prior end-to-end approaches still <strong>rely on separate localization</strong> modules that depend on accurate sensor extrinsic calibration for self-state estimation, thereby limiting generalization across embodiments and environments. 
+            We introduce <strong class="gradient-text">LoGoPlanner</strong>, <strong>a localization-grounded, end-to-end navigation framework</strong> that addresses these limitations by: (1) finetuning a long-horizon visual-geometry backbone to ground predictions with absolute metric scale, thereby providing implicit state estimation for accurate localization; (2) reconstructing surrounding scene geometry from historical observations to supply dense, fine-grained environmental awareness for reliable obstacle avoidance; and (3) conditioning the policy on implicit geometry bootstrapped by the aforementioned auxiliary tasks, thereby reducing error propagation. We evaluate LoGoPlanner in both simulation and real-world settings, where its fully end-to-end design reduces cumulative error while metric-aware geometry memory enhances planning consistency and obstacle avoidance, leading to more than a 27.3% improvement over oracle-localization baselines and strong generalization across embodiments and environments.
+          </p>
+        </div>
       </div>
     </div>
   </div>
+</section>
+<!-- End paper abstract -->
 
-  <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+<section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">LoGoPlanner&nbsp;</span>Preview DEMO</h2>
+        <div class="content">
+          <p>
+          Our proposed <span class="gradient-text">LoGoPlanner</span> achieves stronger robustness by jointly incorporating ego-state information and multi-frame geometric reconstruction. This design ensures greater consistency in trajectory generation while providing richer spatial perception, which in turn enhances obstacle avoidance and overall navigation performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+<!-- Household carousel -->
+<section class="hero is-small carousel-section household-section">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2 highlight-title" style="margin-bottom: 0; text-align: left; color: #707070;">
+        <img src="static/images/background1.jpg" style="height: 1.5em;">
+        Cross Embodiments</h1>
+      <div id="household-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/crossembodiments_g1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/crossembodiments_go2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/crossembodiments_turtlebot.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Household carousel -->
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+<!-- Service carousel -->
+<section class="hero is-small carousel-section service-section">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
+        <img src="static/images/service.svg" style="height: 1.5em;">
+        &nbsp;Service</h1>
+      <div id="service-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/service_1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/service_0.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/service_2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Service carousel -->
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+<!-- Outdoor carousel -->
+<section class="hero is-small carousel-section outdoor-section">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
+        <img src="static/images/yard.svg" style="height: 1.5em;">
+        &nbsp;Outdoor</h1>
+      <div id="outdoor-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/outdoor_0.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/outdoor_1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/outdoor_2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Outdoor carousel -->
 
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+<section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">ODYSSEY&nbsp;</span>Mobile Planner</h2>
+        <div class="content">
+          <p>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Method Figure-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="content has-text-centered" style="max-width: 90%;">
+          <img src="static/images/method.png">
+          <p class="has-text-grey">
+          <span class="gradient-text">ODYSSEY</span>
+          pipeline spans the entire process of a <strong>long-horizon</strong> task, including multi-modal semantic perception, 
+          <strong>map-aware</strong> global planning, <strong>geometry-constrained</strong> action grounding, and step-wise execution by a reinforced learned low-level <strong>whole-body policy</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method figure -->
+
+<section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">ODYSSEY&nbsp;</span>Benchmark</h2>
+        <div class="content">
+          <p>
+          <span class="gradient-text">ODYSSEY</span> Benchmark is the first simulation platform designed for long-horizon mobile manipulation which highlights the following major points: 
+          (1) The benchmark includes <strong>8 multi-stage tasks</strong> designed to evaluate the full pipeline of embodied mobile manipulation, covering perception, planning, navigation, and manipulation. 
+          (2) Each task consists of 2-3 subgoals with diverse object types, spatial layouts, and physical interaction modes to reflect realistic and complex scenarios. 
+          (3) ODYSSEY spans both indoor and outdoor environments, featuring over 300 task variations and numerous unique assets to ensure robust generalization. 
+          (4) Detailed task configurations enable comprehensive benchmarking of system performance across a wide range of practical challenges.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benchmark carousel -->
+<section class="hero is-small carousel-section benchmark-section">
+  <div class="hero-body">
+    <div class="container">
+      <div id="benchmark-carousel" class="carousel bench-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/indoorcollect.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/roomnavigate.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/cartdelivery.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/cabinetstorage.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video5">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/shopping.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video6">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/restocking.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video7">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/outdoorcollect.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video8">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo/outdoordelivery.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Benchmark carousel -->
+
+
+<section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <!-- START: New two-column layout for media -->
+          <div class="columns is-vcentered is-align-items-end">
+            <!-- Column 2: Video on the right -->
+            <div class="column is-third-fifths">
+              <figure class="image">
+                <video playsinline autoplay muted loop>
+                  <source src="static/images/assets.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p>Versatile object configurations in <span class="gradient-text">ODYSSEY</span> benchmark.</p>
+              </figure>
+            </div>
+            <!-- Column 1: Image on the left -->
+            <div class="column is-two-fifths">
+              <figure class="image" style="margin-bottom: 0;">
+                <img src="static/images/bench_table.jpg">
+              </figure>
+              <p>Variation counts, and asset usage per task.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-1 has-text-centered is-size-4-mobile">Real-world Deployment</h2>
+        <div class="content has-text-centered">
+          <!-- START: New two-column layout for media -->
+          <div class="columns is-vcentered is-align-items-end">
+
+            <!-- Column 1: Image on the left -->
+            <div class="column is-two-fifths">
+              <figure class="image" style="margin-bottom: 0;">
+                <img src="static/images/real.png" alt="ODYSSEY robot in action">
+              </figure>
+              <span class="gradient-text">ODYSSEY</span> robot system
+            </div>
+
+            <!-- Column 2: Video on the right -->
+            <div class="column is-third-fifths">
+              <figure class="image">
+                <video playsinline autoplay muted loop>
+                  <source src="static/videos/demo/real.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p>Real-world experiments.</p>
+              </figure>
             </div>
           </div>
         </div>
@@ -314,179 +428,11 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -516,5 +462,170 @@
 
     <!-- End of Statcounter Code -->
 
-  </body>
-  </html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // 1. 定义背景位置（这个可以被所有轮播共用）
+  const backgroundPositions = [
+    '0% center',   // Index 0
+    '50% center',  // Index 1
+    '100% center'  // Index 2
+    // 如果某个轮播有更多视频，可以继续添加
+  ];
+
+  // 2. 找到页面上所有的轮播组件
+  const allCarousels = document.querySelectorAll('.results-carousel');
+
+  // 3. 遍历并为每一个轮播组件独立初始化
+  allCarousels.forEach(carouselElement => {
+    
+    // 初始化 Bulma Carousel，注意这里用的是循环中的 carouselElement
+    const carouselInstance = bulmaCarousel.attach(`#${carouselElement.id}`, {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      loop: true,
+    });
+
+    // 找到当前轮播自己的父级 <section>
+    const carouselSection = carouselElement.closest('.carousel-section');
+
+    // 确保找到了 section 和 carousel 实例
+    if (carouselInstance.length > 0 && carouselSection) {
+      
+      // 4. 为当前这个轮播实例绑定事件
+      carouselInstance[0].on('after:show', function(event) {
+        
+        // 使用 event.index 获取当前索引 (根据您的经验，event.index 是正确的)
+        const currentIndex = event.next;
+        const newPosition = backgroundPositions[currentIndex];
+
+        if (newPosition) {
+          console.log(`Carousel #${carouselElement.id} 切换到索引 ${currentIndex}, 背景位置变为: ${newPosition}`);
+          // 只修改当前这个轮播所在的 section 的背景
+          carouselSection.style.backgroundPosition = newPosition;
+        }
+      });
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  // 1. 定义背景位置（这个可以被所有轮播共用）
+  const backgroundPositions = [
+    '2% center',   // Index 0
+    '18% center',  // Index 1
+    '34% center',  // Index 2
+    '50% center',  // Index 3
+    '66% center',  // Index 4
+    '82% center',  // Index 5
+    '98% center',  // Index 6
+    // 如果某个轮播有更多视频，可以继续添加
+  ];
+
+  // 2. 找到页面上所有的轮播组件
+  const allCarousels = document.querySelectorAll('.bench-carousel');
+
+  // 3. 遍历并为每一个轮播组件独立初始化
+  allCarousels.forEach(carouselElement => {
+    
+    // 初始化 Bulma Carousel，注意这里用的是循环中的 carouselElement
+    const carouselInstance = bulmaCarousel.attach(`#${carouselElement.id}`, {
+      slidesToScroll: 1,
+      slidesToShow: 2,
+      loop: true,
+    });
+
+    // 找到当前轮播自己的父级 <section>
+    const carouselSection = carouselElement.closest('.carousel-section');
+
+    // 确保找到了 section 和 carousel 实例
+    if (carouselInstance.length > 0 && carouselSection) {
+      
+      // 4. 为当前这个轮播实例绑定事件
+      carouselInstance[0].on('after:show', function(event) {
+        
+        // 使用 event.index 获取当前索引 (根据您的经验，event.index 是正确的)
+        const currentIndex = event.next;
+        const newPosition = backgroundPositions[currentIndex];
+
+        if (newPosition) {
+          console.log(`Carousel #${carouselElement.id} 切换到索引 ${currentIndex}, 背景位置变为: ${newPosition}`);
+          // 只修改当前这个轮播所在的 section 的背景
+          carouselSection.style.backgroundPosition = newPosition;
+        }
+      });
+    }
+  });
+});
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  
+    // --- 配置项 ---
+    const typingTextElement = document.getElementById('typing-text');
+    const mainTitleElement = document.getElementById('main-title');
+    const subtitleElement = document.getElementById('subtitle');
+  
+    const textToType = "ODYSSEY  ";
+    const typeSpeed = 150; // 打字速度 (ms)
+    const pauseAfterTyping = 2000; // 打完字后的停留时间
+    const pauseOnSubtitle = 4000; // 副标题显示时间
+    const transitionDuration = 800; // 淡入淡出动画的持续时间 (应与CSS中的 transition 一致)
+  
+    // --- 动画函数 ---
+  
+    // 1. 模拟等待的函数
+    const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+  
+    // 2. 打字函数
+    async function typeText() {
+      // 重置文本内容
+      typingTextElement.textContent = '';
+      // 开始打字
+      for (let i = 0; i < textToType.length; i++) {
+        typingTextElement.textContent += textToType.charAt(i);
+        await sleep(typeSpeed);
+      }
+    }
+  
+    // --- 主循环 ---
+    async function animationLoop() {
+      while (true) {
+        // **阶段 1: 打出并显示主标题**
+        // 显示主标题容器，但不显示光标动画
+        mainTitleElement.style.opacity = 1;
+        await typeText(); // 执行打字动画
+        
+        // 打字完成后，让光标消失
+        typingTextElement.style.setProperty('--blink-display', 'none');
+        if(typingTextElement.style.getPropertyValue('--blink-display') === 'none'){
+          const cursor = typingTextElement.parentElement.querySelector('span::after');
+          if(cursor) cursor.style.display = 'none';
+        }
+  
+        await sleep(pauseAfterTyping);
+  
+        // **阶段 2: 主标题淡出，副标题淡入**
+        mainTitleElement.style.opacity = 0;
+        subtitleElement.style.opacity = 1;
+  
+        // 等待副标题显示一段时间
+        await sleep(pauseOnSubtitle);
+  
+        // **阶段 3: 副标题淡出，为下一次循环做准备**
+        subtitleElement.style.opacity = 0;
+        
+        // 等待淡出动画完成
+        await sleep(transitionDuration);
+      }
+    }
+    
+    // 启动动画
+    animationLoop();
+  });
+  </script>
+
+</body>
+ </html>
