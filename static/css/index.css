@@ -293,7 +293,17 @@ body {
   background-image: url('../icons/benchmark-icon-8.svg'); 
 }
 
+.results-carousel .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.results-carousel video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
 
 /* 移除原有的背景图片设置 */
 .hero.is-fullheight {
