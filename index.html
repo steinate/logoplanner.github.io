@@ -64,6 +64,9 @@
                 <h1 id="subtitle" class="title is-1 publication-title is-size-1-mobile" style="font-size: 4rem;">
                   Localization Grounded Navigation Policy with Metric-aware Visual Geometry
                 </h1>
+                <h1 id="subtitle" class="title is-1 publication-title is-size-1-mobile" style="font-size: 4rem;">
+                  Aka NavDPv2
+                </h1>
               </div>
     
               <div class="is-size-4 publication-authors">
@@ -148,6 +151,12 @@
             Trajectory planning in unstructured environments is a fundamental and challenging capability for mobile robots. Traditional modular pipelines suffer from <strong>latency and cascading errors</strong> across perception, localization, mapping, and planning modules. Recent end-to-end learning methods map raw visual observations directly to control signals or trajectories, promising greater performance and efficiency in open-world settings. However, most prior end-to-end approaches still <strong>rely on separate localization</strong> modules that depend on accurate sensor extrinsic calibration for self-state estimation, thereby limiting generalization across embodiments and environments. 
             We introduce <strong class="gradient-text">LoGoPlanner</strong>, <strong>a localization-grounded, end-to-end navigation framework</strong> that addresses these limitations by: (1) finetuning a long-horizon visual-geometry backbone to ground predictions with absolute metric scale, thereby providing implicit state estimation for accurate localization; (2) reconstructing surrounding scene geometry from historical observations to supply dense, fine-grained environmental awareness for reliable obstacle avoidance; and (3) conditioning the policy on implicit geometry bootstrapped by the aforementioned auxiliary tasks, thereby reducing error propagation. We evaluate LoGoPlanner in both simulation and real-world settings, where its fully end-to-end design reduces cumulative error while metric-aware geometry memory enhances planning consistency and obstacle avoidance, leading to more than a 27.3% improvement over oracle-localization baselines and strong generalization across embodiments and environments.
           </p>
+        </div>
+        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls autoplay muted loop>
+            <source src="static/videos/ICRA26.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
@@ -283,7 +292,7 @@
       <div id="service-carousel" class="carousel results-carousel">
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/dynamic_avoidance_2.mp4" type="video/mp4">
+            <source src="static/videos/dynamic_avoidance_3.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-video1">
@@ -293,7 +302,7 @@
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/dynamic_avoidance_3.mp4" type="video/mp4">
+            <source src="static/videos/dynamic_avoidance_2.mp4" type="video/mp4">
           </video>
         </div>
       </div>
