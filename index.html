@@ -155,17 +155,90 @@
 </section>
 <!-- End paper abstract -->
 
+
 <section class="section is-small" id="umi">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
 
-        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">LoGoPlanner&nbsp;</span>Preview DEMO</h2>
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">Localization Grounded Planner&nbsp;</span></h2>
+        <div class="content">
+          <p>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Method Figure-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="content has-text-centered" style="max-width: 90%;">
+          <img src="static/images/motivation.svg">
+          <p class="has-text-grey">
+            (a) Traditional modular planners decompose tasks into modules, introducing cascading errors. <br>
+            (b) Existing end-to-end frameworks directly map observations to control signals but still rely on explicit localization modules. <br>
+            (c) LoGoPlanner integrates implicit state estimation and metric aware geometry perception into policy for fully end-to-end planning. <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">LoGoPlanner&nbsp;</span></h2>
         <div class="content">
           <p>
           Our proposed <span class="gradient-text">LoGoPlanner</span> achieves stronger robustness by jointly incorporating ego-state information and multi-frame geometric reconstruction. This design ensures greater consistency in trajectory generation while providing richer spatial perception, which in turn enhances obstacle avoidance and overall navigation performance.
           </p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small carousel-section outdoor-section">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
+        <img src="static/images/icon_small.png" style="height: 1.5em;">
+        &nbsp;Goal Reaching without Odometry: speed x1</h1>
+        <div id="outdoor-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+              <source src="static/videos/goal_1.mp4" type="video/mp4">
+            </video>
+            <div class="video-description">
+              <p class="has-text-centered">Goal reaching scenario 1: Demonstrating navigation to target in open space</p>
+            </div>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <source src="static/videos/goal_2.mp4" type="video/mp4">
+            </video>
+            <div class="video-description">
+              <p class="has-text-centered">Goal reaching scenario 2: Complex environment navigation</p>
+            </div>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">
+              <source src="static/videos/constrain_3.mp4" type="video/mp4">
+            </video>
+            <div class="video-description">
+              <p class="has-text-centered">Constrained space navigation: Safe passage in narrow corridor</p>
+            </div>
+          </div>
       </div>
     </div>
   </div>
@@ -258,32 +331,6 @@
 </section>
 <!-- End Outdoor carousel -->
 
-<section class="hero is-small carousel-section outdoor-section">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
-        <img src="static/images/icon_small.png" style="height: 1.5em;">
-        &nbsp;Goal Reaching: speed x1</h1>
-      <div id="outdoor-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/goal_1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/goal_2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/constrain_3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="section is-small" id="umi">
   <div class="container is-max-desktop">
