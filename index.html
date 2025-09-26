@@ -221,9 +221,49 @@
         </div>
       </div>
     </div>
+    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem;">
+      <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls autoplay muted loop>
+        <source src="static/videos/teaser-turtlebot.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-description" style="margin-bottom: 2rem;">
+      <p class="has-text-centered is-size-4">TurtleBot</p>
+    </div>
+    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem;">
+      <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls autoplay muted loop>
+        <source src="static/videos/teaser-go2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-description" style="margin-bottom: 2rem;">
+      <p class="has-text-centered is-size-4">Unitree Go2</p>
+    </div>
+    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem;">
+      <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls autoplay muted loop>
+        <source src="static/videos/teaser-g1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-description">
+      <p class="has-text-centered is-size-4">Unitree G1</p>
+    </div>
+    
+    
   </div>
 </section>
 
+<style>
+  .video-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .video-description {
+    padding: 10px 0;
+    text-align: center;
+  }
+</style>
 
 
 
@@ -233,35 +273,44 @@
       <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
         <img src="static/images/icon_small.png" style="height: 1.5em;">
         &nbsp;Goal Reaching without Odometry: speed x1</h1>
-        <div id="outdoor-carousel" class="carousel results-carousel">
-          <div class="item item-video1">
-            <video poster="" id="video1" autoplay controls muted loop height="100%">
+      <div id="outdoor-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <div class="video-wrapper">
+            <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
               <source src="static/videos/goal_1.mp4" type="video/mp4">
             </video>
             <div class="video-description">
-              <p class="has-text-centered">Goal reaching scenario 1: Demonstrating navigation to target in open space</p>
+              <p class="has-text-centered is-size-5">Goal reaching scenario 1: Demonstrating navigation to target in open space</p>
             </div>
           </div>
-          <div class="item item-video2">
-            <video poster="" id="video2" autoplay controls muted loop height="100%">
+        </div>
+        <div class="item item-video2">
+          <div class="video-wrapper">
+            <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
               <source src="static/videos/goal_2.mp4" type="video/mp4">
             </video>
             <div class="video-description">
-              <p class="has-text-centered">Goal reaching scenario 2: Complex environment navigation</p>
+              <p class="has-text-centered is-size-5">Goal reaching scenario 2: Complex environment navigation</p>
             </div>
           </div>
-          <div class="item item-video3">
-            <video poster="" id="video3" autoplay controls muted loop height="100%">
+        </div>
+        <div class="item item-video3">
+          <div class="video-wrapper">
+            <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
               <source src="static/videos/constrain_3.mp4" type="video/mp4">
             </video>
             <div class="video-description">
-              <p class="has-text-centered">Constrained space navigation: Safe passage in narrow corridor</p>
+              <p class="has-text-centered is-size-5">Constrained space navigation: Safe passage in narrow corridor</p>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+
+
 
 <!-- Household carousel -->
 <section class="hero is-small carousel-section household-section">
@@ -449,52 +498,6 @@
   </div>
 </section>
 <!-- End Benchmark carousel -->
-
-
-<section class="section is-small" id="umi">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column">
-        <div class="content has-text-centered">
-          <!-- START: New two-column layout for media -->
-          <div class="columns is-vcentered is-align-items-end">
-            <!-- Column 2: Video on the right -->
-            <div class="column is-two-fifths">
-              <figure class="image">
-                <video playsinline autoplay muted loop>
-                  <source src="static/videos/turtlebot__output.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <!-- <p>Versatile object configurations in <span class="gradient-text">LoGoPlanner</span> benchmark.</p> -->
-              </figure>
-            </div>
-
-            <div class="column is-third-fifths">
-              <figure class="image">
-                <video playsinline autoplay muted loop>
-                  <source src="static/videos/go2_output.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <!-- <p>Versatile object configurations in <span class="gradient-text">LoGoPlanner</span> benchmark.</p> -->
-              </figure>
-            </div>
-
-            <div class="column is-four-fifths">
-              <figure class="image">
-                <video playsinline autoplay muted loop>
-                  <source src="static/videos/g1_output.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <!-- <p>Versatile object configurations in <span class="gradient-text">LoGoPlanner</span> benchmark.</p> -->
-              </figure>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <!--BibTex citation -->
