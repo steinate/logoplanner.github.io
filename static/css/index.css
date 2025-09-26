@@ -319,6 +319,17 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+.hero-body.blur{
+  /* 关键：设置半透明的白色背景，这将覆盖在父元素 .hero 的背景图之上 */
+  background-color: rgba(255, 255, 255, 0.5); /* 0.5 代表 50% 透明度 */
+
+  /* (可选) 添加毛玻璃效果，模糊背景图，让文字更突出 */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 /* 2. 设置内容框的样式 */
