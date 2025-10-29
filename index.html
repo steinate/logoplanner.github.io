@@ -291,35 +291,41 @@
         </div>
       </div>
     </div>
-    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem;">
-      <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls autoplay muted loop>
-        <source src="static/videos/teaser-turtlebot.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <div class="columns is-multiline">
+      <div class="column is-one-third">
+        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls autoplay muted loop>
+            <source src="static/videos/teaser-turtlebot.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-description" style="margin-top: 0.5rem;">
+          <p class="has-text-centered is-size-4">TurtleBot</p>
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls autoplay muted loop>
+            <source src="static/videos/teaser-go2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-description" style="margin-top: 0.5rem;">
+          <p class="has-text-centered is-size-4">Unitree Go2</p>
+        </div>
+      </div>
+      <div class="column is-one-third">
+        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls autoplay muted loop>
+            <source src="static/videos/teaser-g1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-description" style="margin-top: 0.5rem;">
+          <p class="has-text-centered is-size-4">Unitree G1</p>
+        </div>
+      </div>
     </div>
-    <div class="video-description" style="margin-bottom: 2rem;">
-      <p class="has-text-centered is-size-4">TurtleBot</p>
-    </div>
-    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem;">
-      <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls autoplay muted loop>
-        <source src="static/videos/teaser-go2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <div class="video-description" style="margin-bottom: 2rem;">
-      <p class="has-text-centered is-size-4">Unitree Go2</p>
-    </div>
-    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 1.5rem;">
-      <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls autoplay muted loop>
-        <source src="static/videos/teaser-g1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <div class="video-description">
-      <p class="has-text-centered is-size-4">Unitree G1</p>
-    </div>
-    
-    
   </div>
 </section>
 
@@ -343,8 +349,8 @@
       <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
         <img src="static/images/icon_full.png" style="height: 1.5em;">
         &nbsp;Goal Reaching without Odometry: speed x1</h1>
-      <div id="outdoor-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
           <div class="video-wrapper">
             <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
               <source src="static/videos/goal_1.mp4" type="video/mp4">
@@ -354,7 +360,7 @@
             </div>
           </div>
         </div>
-        <div class="item item-video2">
+        <div class="column is-one-third">
           <div class="video-wrapper">
             <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
               <source src="static/videos/goal_2.mp4" type="video/mp4">
@@ -364,7 +370,7 @@
             </div>
           </div>
         </div>
-        <div class="item item-video3">
+        <div class="column is-one-third">
           <div class="video-wrapper">
             <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
               <source src="static/videos/constrain_3.mp4" type="video/mp4">
@@ -389,8 +395,8 @@
       <h1 class="title is-2 highlight-title" style="margin-bottom: 0; text-align: left; color: #707070;">
         <img src="static/images/icon_full.png" style="height: 1.5em;">
         Cross Embodiments: speed x1</h1>
-      <div id="household-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
           <div class="video-wrapper">
             <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
               <source src="static/videos/crossembodiments_g1.mp4" type="video/mp4">
@@ -400,7 +406,7 @@
             </div>
           </div>
         </div>
-        <div class="item item-video2">
+        <div class="column is-one-third">
           <div class="video-wrapper">
             <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
               <source src="static/videos/crossembodiments_go2.mp4" type="video/mp4">
@@ -410,7 +416,7 @@
             </div>
           </div>
         </div>
-        <div class="item item-video3">
+        <div class="column is-one-third">
           <div class="video-wrapper">
             <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
               <source src="static/videos/crossembodiments_turtlebot.mp4" type="video/mp4">
@@ -433,18 +439,18 @@
       <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
         <img src="static/images/icon_full.png" style="height: 1.5em;">
         &nbsp;Dynamic Avoidance: speed x1</h1>
-      <div id="service-carousel" class="carousel results-carousel">
-        <div class="item item-video2">
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
           <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/dynamic_avoidance_2.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video1">
+        <div class="column is-one-third">
           <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/dynamic_avoidance_3.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video3">
+        <div class="column is-one-third">
           <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/dynamic_avoidance_1.mp4" type="video/mp4">
           </video>
@@ -462,18 +468,18 @@
       <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
         <img src="static/images/icon_full.png" style="height: 1.5em;">
         &nbsp;Safe passage in confined spaces: speed x1</h1>
-      <div id="outdoor-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
           <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/constrain_1.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video2">
+        <div class="column is-one-third">
           <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/constrain_2.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video3">
+        <div class="column is-one-third">
           <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/constrain_3.mp4" type="video/mp4">
           </video>
@@ -537,44 +543,44 @@
 <section class="hero is-small carousel-section benchmark-section">
   <div class="hero-body">
     <div class="container">
-      <div id="benchmark-carousel" class="carousel bench-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
+      <div class="columns is-multiline">
+        <div class="column is-one-quarter">
+          <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/simulation3.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
+        <div class="column is-one-quarter">
+          <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/simulation4.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">
+        <div class="column is-one-quarter">
+          <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/simulation5.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video4">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">
+        <div class="column is-one-quarter">
+          <video poster="" id="video4" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/simulation6.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video5">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">
+        <div class="column is-one-quarter">
+          <video poster="" id="video5" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/simulation7.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video6">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">
+        <div class="column is-one-quarter">
+          <video poster="" id="video6" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/simulation8.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video7">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">
+        <div class="column is-one-quarter">
+          <video poster="" id="video7" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/simulation9.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="item item-video8">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">
+        <div class="column is-one-quarter">
+          <video poster="" id="video8" autoplay controls muted loop style="width: 100%;">
             <source src="static/videos/simulation10.mp4" type="video/mp4">
           </video>
         </div>
@@ -598,7 +604,7 @@
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered has-text-centered">
-        <div class="content has-text-centered" style="max-width: 90%;">
+        <div class="content has-text-centered" style="max-width: 40%;">
           <img src="static/images/dataset.jpg">
           <p class="has-text-grey">
             Visualization of trajectory endpoints in the LoGoPlanner dataset. <br>
