@@ -25,7 +25,7 @@
 
 
   <title>LoGoPlanner: Localization Grounded Navigation Policy with Metric-aware Visual Geometry</title>
-  <link rel="icon" type="image/png" href="static/images/icon_full.png">
+  <link rel="icon" type="image/png" href="static/images/icon_big.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -58,7 +58,7 @@
             <div class="content-box">
               <div class="title-animation-container">
                 <h1 id="main-title" class="title is-1 publication-title is-size-1-mobile" style="font-size: 8rem;">
-                  <img src="static/images/icon_full.png" alt="LoGoPlanner icon" style="height: 1.5em;">
+                  <img src="static/images/icon_big.png" alt="LoGoPlanner icon" style="height: 1.5em;">
                   <span class="gradient-text"><span id="typing-text"></span></span>
                 </h1>
                 <h1 id="subtitle" class="title is-1 publication-title is-size-1-mobile" style="font-size: 4rem;">
@@ -96,7 +96,7 @@
               <div class="highlight-text is-size-4 has-text-weight-bold has-text-primary">
                 This is an improved version of our prior work <a href="https://wzcai99.github.io/navigation-diffusion-policy.github.io/" target="_blank" rel="noopener noreferrer">
                   <span style="color: #FF5733;">NavDP</span>
-                </a>: aka <span style="color: #FF5733;">NavDP++</span>
+                </a>: aka <span style="color: #FF5733;">NavDP--</span>
               </div>
     
               <div class="column has-text-centered">
@@ -208,6 +208,224 @@
 </section>
 
 
+
+<section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">LoGoPlanner&nbsp;</span></h2>
+      </div>
+    </div>
+    <div class="content">
+      <p>
+      Our proposed <span class="gradient-text">LoGoPlanner</span> achieves stronger robustness by jointly incorporating ego-state information and multi-frame geometric reconstruction. This design ensures greater consistency in trajectory generation while providing richer spatial perception, which in turn enhances obstacle avoidance and overall navigation performance.
+      </p>
+    </div>
+    <div class="container">
+      <div id="outdoor-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop width="100%">
+            <source src="static/videos/teaser-turtlebot.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop width="100%">
+            <source src="static/videos/teaser-go2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop width="100%">
+            <source src="static/videos/teaser-g1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section class="hero is-small carousel-section outdoor-section">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
+        <img src="static/images/icon_big.png" style="height: 1.5em;">
+        &nbsp;Goal Reaching without Odometry: speed x1</h1>
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <div class="video-wrapper">
+            <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
+              <source src="static/videos/goal_1.mp4" type="video/mp4">
+            </video>
+            <div class="video-description">
+              <p class="has-text-centered is-size-5">Goal reaching: (5m, 2m)</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="video-wrapper">
+            <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
+              <source src="static/videos/goal_2.mp4" type="video/mp4">
+            </video>
+            <div class="video-description">
+              <p class="has-text-centered is-size-5">Goal reaching: (3m, -6m)</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="video-wrapper">
+            <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
+              <source src="static/videos/constrain_3.mp4" type="video/mp4">
+            </video>
+            <div class="video-description">
+              <p class="has-text-centered is-size-5">Goal reaching: (2m, 8m)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Household carousel -->
+<section class="hero is-small carousel-section household-section">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2 highlight-title" style="margin-bottom: 0; text-align: left; color: #707070;">
+        <img src="static/images/icon_big.png" style="height: 1.5em;">
+        Cross Embodiments: speed x1</h1>
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <div class="video-wrapper">
+            <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
+              <source src="static/videos/crossembodiments_g1.mp4" type="video/mp4">
+            </video>
+            <div class="video-description">
+              <p class="has-text-centered is-size-5">Unitree G1</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="video-wrapper">
+            <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
+              <source src="static/videos/crossembodiments_go2.mp4" type="video/mp4">
+            </video>
+            <div class="video-description">
+              <p class="has-text-centered is-size-5">Unitree Go2</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="video-wrapper">
+            <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
+              <source src="static/videos/crossembodiments_turtlebot.mp4" type="video/mp4">
+            </video>
+            <div class="video-description">
+              <p class="has-text-centered is-size-5">Turtlebot 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Household carousel -->
+
+<!-- Service carousel -->
+<section class="hero is-small carousel-section service-section">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
+        <img src="static/images/icon_big.png" style="height: 1.5em;">
+        &nbsp;Dynamic Avoidance: speed x1</h1>
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
+            <source src="static/videos/dynamic_avoidance_2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
+            <source src="static/videos/dynamic_avoidance_3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
+            <source src="static/videos/dynamic_avoidance_1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Service carousel -->
+
+<!-- Outdoor carousel -->
+<section class="hero is-small carousel-section outdoor-section">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
+        <img src="static/images/icon_big.png" style="height: 1.5em;">
+        &nbsp;Safe passage in confined spaces: speed x1</h1>
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
+            <source src="static/videos/constrain_1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
+            <source src="static/videos/constrain_2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-one-third">
+          <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
+            <source src="static/videos/constrain_3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Outdoor carousel -->
+
+
+<section class="section is-small" id="umi">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+
+        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">LoGoPlanner&nbsp;</span>Fully E2E Planner</h2>
+        <div class="content">
+          <p>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Method Figure-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="content has-text-centered" style="max-width: 90%;">
+          <img src="static/images/graph.svg">
+          <p class="has-text-grey">
+          <span class="gradient-text">LoGoPlanner</span> injects scale priors into the image patches that are encoded by ViT, and finetunes the video geometry model to metric scale prediction. We adopt a query-based design in which ego state representation and environment geometry are implicitly aggregated through task-specific queries. A diffusion policy head is detached to generate feasible and collision-free trajectories.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method figure -->
+
 <section class="section is-small" id="umi">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -277,223 +495,6 @@
     </div>
   </div>
 </section>
-
-<section class="section is-small" id="umi">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">LoGoPlanner&nbsp;</span></h2>
-      </div>
-    </div>
-    <div class="content">
-      <p>
-      Our proposed <span class="gradient-text">LoGoPlanner</span> achieves stronger robustness by jointly incorporating ego-state information and multi-frame geometric reconstruction. This design ensures greater consistency in trajectory generation while providing richer spatial perception, which in turn enhances obstacle avoidance and overall navigation performance.
-      </p>
-    </div>
-    <div class="container">
-      <div id="outdoor-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop width="100%">
-            <source src="static/videos/teaser-turtlebot.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop width="100%">
-            <source src="static/videos/teaser-go2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop width="100%">
-            <source src="static/videos/teaser-g1.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</section>
-
-
-<section class="hero is-small carousel-section outdoor-section">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
-        <img src="static/images/icon_full.png" style="height: 1.5em;">
-        &nbsp;Goal Reaching without Odometry: speed x1</h1>
-      <div class="columns is-multiline">
-        <div class="column is-one-third">
-          <div class="video-wrapper">
-            <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
-              <source src="static/videos/goal_1.mp4" type="video/mp4">
-            </video>
-            <div class="video-description">
-              <p class="has-text-centered is-size-5">Goal reaching: (5m, 2m)</p>
-            </div>
-          </div>
-        </div>
-        <div class="column is-one-third">
-          <div class="video-wrapper">
-            <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
-              <source src="static/videos/goal_2.mp4" type="video/mp4">
-            </video>
-            <div class="video-description">
-              <p class="has-text-centered is-size-5">Goal reaching: (3m, -6m)</p>
-            </div>
-          </div>
-        </div>
-        <div class="column is-one-third">
-          <div class="video-wrapper">
-            <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
-              <source src="static/videos/constrain_3.mp4" type="video/mp4">
-            </video>
-            <div class="video-description">
-              <p class="has-text-centered is-size-5">Goal reaching: (2m, 8m)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<!-- Household carousel -->
-<section class="hero is-small carousel-section household-section">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title is-2 highlight-title" style="margin-bottom: 0; text-align: left; color: #707070;">
-        <img src="static/images/icon_full.png" style="height: 1.5em;">
-        Cross Embodiments: speed x1</h1>
-      <div class="columns is-multiline">
-        <div class="column is-one-third">
-          <div class="video-wrapper">
-            <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
-              <source src="static/videos/crossembodiments_g1.mp4" type="video/mp4">
-            </video>
-            <div class="video-description">
-              <p class="has-text-centered is-size-5">Unitree G1</p>
-            </div>
-          </div>
-        </div>
-        <div class="column is-one-third">
-          <div class="video-wrapper">
-            <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
-              <source src="static/videos/crossembodiments_go2.mp4" type="video/mp4">
-            </video>
-            <div class="video-description">
-              <p class="has-text-centered is-size-5">Unitree Go2</p>
-            </div>
-          </div>
-        </div>
-        <div class="column is-one-third">
-          <div class="video-wrapper">
-            <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
-              <source src="static/videos/crossembodiments_turtlebot.mp4" type="video/mp4">
-            </video>
-            <div class="video-description">
-              <p class="has-text-centered is-size-5">Turtlebot 3</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Household carousel -->
-
-<!-- Service carousel -->
-<section class="hero is-small carousel-section service-section">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
-        <img src="static/images/icon_full.png" style="height: 1.5em;">
-        &nbsp;Dynamic Avoidance: speed x1</h1>
-      <div class="columns is-multiline">
-        <div class="column is-one-third">
-          <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
-            <source src="static/videos/dynamic_avoidance_2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column is-one-third">
-          <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
-            <source src="static/videos/dynamic_avoidance_3.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column is-one-third">
-          <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
-            <source src="static/videos/dynamic_avoidance_1.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Service carousel -->
-
-<!-- Outdoor carousel -->
-<section class="hero is-small carousel-section outdoor-section">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title is-2 is-flex is-align-items-center highlight-title" style="margin-bottom: 0; text-align: left; color: #4d4b4b;">
-        <img src="static/images/icon_full.png" style="height: 1.5em;">
-        &nbsp;Safe passage in confined spaces: speed x1</h1>
-      <div class="columns is-multiline">
-        <div class="column is-one-third">
-          <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
-            <source src="static/videos/constrain_1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column is-one-third">
-          <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
-            <source src="static/videos/constrain_2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column is-one-third">
-          <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
-            <source src="static/videos/constrain_3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Outdoor carousel -->
-
-
-<section class="section is-small" id="umi">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-
-        <h2 class="title is-1 has-text-centered is-size-4-mobile"><span class="gradient-text">LoGoPlanner&nbsp;</span>Fully E2E Planner</h2>
-        <div class="content">
-          <p>
-
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Method Figure-->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-centered has-text-centered">
-        <div class="content has-text-centered" style="max-width: 90%;">
-          <img src="static/images/graph.svg">
-          <p class="has-text-grey">
-          <span class="gradient-text">LoGoPlanner</span> injects scale priors into the image patches that are encoded by ViT, and finetunes the video geometry model to metric scale prediction. We adopt a query-based design in which ego state representation and environment geometry are implicitly aggregated through task-specific queries. A diffusion policy head is detached to generate feasible and collision-free trajectories.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End method figure -->
 
 <section class="section is-small" id="umi">
   <div class="container is-max-desktop">
