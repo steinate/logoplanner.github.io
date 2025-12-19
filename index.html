@@ -485,11 +485,33 @@
             The first row shows the scene point cloud of the ground truth, and the second row shows the predicted scene point cloud. <br>
             The point cloud at the metric scale is predicted with the chassis of the last frame as the coordinate origin.<br>
           </p>
+          
+          <!-- 醒目的声明区块 -->
+          <div class="notification is-info is-light" style="margin-top: 2rem; text-align: left; border-left: 4px solid #3298dc;">
+            <div style="display: flex; align-items: flex-start;">
+              <span class="icon has-text-info" style="margin-right: 0.75rem; flex-shrink: 0;">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              <div>
+                <p style="font-weight: 600; margin-bottom: 0.5rem;">Note on Current Limitations & Future Work</p>
+                <p style="margin-bottom: 0;">
+                  Due to the limited number(~2k) of available navigation scenes, the reconstruction performance in real-world environments remains unsatisfactory. We are currently training on larger-scale datasets, such as ScanNet, to enhance the performance for practical deployment.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 区块结束 -->
+
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+<!-- 在HTML的<head>中引入Font Awesome图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 
 <section class="section is-small" id="umi">
   <div class="container is-max-desktop">
